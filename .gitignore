@@ -1,0 +1,36 @@
+# 依赖目录
+node_modules/
+
+# 输出目录
+output/
+prompts/
+
+# 日志文件
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器和IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 临时文件
+tmp/
+temp/
+
+# 运行时数据
+.pnpm-store/
+.npm/ 

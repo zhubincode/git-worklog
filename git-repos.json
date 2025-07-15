@@ -1,0 +1,26 @@
+{
+  "author": "zhubin",
+  "repositories": [
+    "/Users/zhubin/Desktop/pi-solution/code/crew-web-vue-3.0",
+    "/Users/zhubin/Desktop/pi-solution/code/crew-portal",
+    "/Users/zhubin/Desktop/pi-solution/code/crew-app-front-3.0"
+  ],
+  "outputDir": "output",
+  "aiPromptDir": "prompts",
+  "dateFormat": "YYYY-MM-DD",
+  "timeFormat": "HH:mm:ss",
+  "commitFormat": {
+    "pretty": "%h|%an|%ad|%s|%b",
+    "separator": "<<<END>>>"
+  },
+  "reportFormat": {
+    "includeBody": true,
+    "showAuthor": false,
+    "showDate": true,
+    "showHash": false
+  },
+  "aiPrompt": {
+    "enabled": true,
+    "template": "嘿，我是{author}，需要你帮我把下面的Git提交记录整理成日报。\n\n{commits}\n\n有几点要求：\n1. 必须按日期分组\n2. 每个日期下再按项目分组\n3. 对技术性内容做概念抽象和提炼，让非技术人员也能理解\n4. 如果我的提交信息太技术化或太简略，帮我适当扩展解释一下\n5. 不要合并不同天的内容\n\n技术内容可以保留，但要确保易于理解。谢谢！"
+  }
+}
