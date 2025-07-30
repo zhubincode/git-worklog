@@ -220,6 +220,8 @@ function calculateDates(selection, inputs) {
       return [dayjs().subtract(1, "day")];
     case "最近一周":
       return _.map(_.range(7), (i) => dayjs().subtract(i, "day"));
+    case "最近两周":
+      return _.map(_.range(14), (i) => dayjs().subtract(i, "day"));
     case "指定日期":
       return [dayjs(inputs.date)];
     case "指定范围":
@@ -246,7 +248,7 @@ async function main() {
       type: "list",
       name: "selection",
       message: "请选择日期范围：",
-      choices: ["今日", "昨日", "最近一周", "指定日期", "指定范围"],
+      choices: ["今日", "昨日", "最近一周", "最近两周", "指定日期", "指定范围"],
     },
   ]);
 
